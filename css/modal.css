@@ -1,81 +1,77 @@
-.modal{
-    position: absolute;
-    top: 0;
-    left: 0;
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.03s;
-
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.03s;
 }
 
-.modal__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 .btn {
-    background: white;
-    padding: 0.3rem 3.4rem;
-    border: 2px solid black;
-    margin-right: 2.6rem;
-    box-shadow: 0 0 0 black;
-    transition: all 0.2s;
-    height: 50px;
-    cursor: pointer;
-  }
-  .btn:hover {
-    background: #D1EBDF;
-  }
+  background: white;
+  padding: 0.3rem 3.4rem;
+  border: 1px solid#24331d;
+  margin-right: 2.6rem;
+  box-shadow: 0 0 0  #1f2c19;
+  transition: all 0.2s;
+  height: 50px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #d1ebdf;
+}
 
 .options {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    
-  }
-.modal__box{
-    width: 20vw;
-    height: 25vh;
-    z-index: 3;
-    box-shadow: 15px 15px 15px rgb(255, 255, 255);
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem 1rem 1rem 3rem;
-    border: 2px solid rgb(26, 25, 25);
-    border-radius: 5px;
-    background: white;
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.modal__box {
+  width: 20vw;
+  height: 25vh;
+  z-index: 3;
+  box-shadow: 15px 15px 15px rgb(255, 255, 255);
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 1rem 3rem;
+  border: 1px solid #1f2c19;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.modal__box > h1{
-    all:unset;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
-    font-size: 19px;
-
-    
+.modal__box > h1 {
+  all: unset;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
 }
 
-.modal__hidden{
-    opacity: 0;
-    z-index: -1;
+.modal__hidden {
+  opacity: 0;
+  z-index: -1;
 }
 
-.closebtn{
-    all: unset;
-    color: rgb(177, 13, 13);
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 120px;
-    cursor: pointer;
+.closebtn {
+  all: unset;
+  color: rgb(177, 13, 13);
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 120px;
+  cursor: pointer;
 }

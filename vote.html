@@ -1,144 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image⁄x-icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/vote.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <title>Bookrest</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image⁄x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/vote.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <title>BOOKREST</title>
+  </head>
+  <body>
     <div class="navbar">
-        <div class="logo" onclick="location.href='main.html'">
-            <img src="img/nav_logo.jpg" />
-        
-        <h3>Bookrest</h3>
-    </div>
+      <div class="logo" onclick="location.href='main.html'">
+        <img src="img/nav_logo.jpg" />
 
-        <div class="menu">
-            <a href="category.html">카테고리</a>
-            <a href="vote.html">이달의 책</a>
-        </div>
+        <h3>BOOKREST</h3>
+      </div>
+
+      <div class="menu">
+        <a href="category.html">카테고리</a>
+        <a href="vote.html">이달의 책</a>
+      </div>
     </div>
 
     <div class="page_detail">
-        <h2>이달의 페이지</h2>
-        <br>
-        <h4>Bookrest에 많은 관심 가져주셔서 감사합니다.
+      <h2>이달의 페이지</h2>
+      <br />
+      <h4>
+Bookrest에 많은 관심 가져주셔서 감사합니다. 
 이달의 페이지는 여러분들의 목소리를 듣기 위해 제작한 자그마한 투표 서비스입니다.
-<b>"이 책이 필요해!"</b> 싶다면 투표해주세요.
-투표 기간 종료 후 랭킹 <b>1 ~ 5위</b>로 선정된 책들은 저희가 구비할 예정입니다.
+<b>"이 책이 필요해!"</b> 싶다면 투표해주세요. 
+투표 기간 종료 후 랭킹 <b>1 ~ 5위</b>로 선정된 책들은 저희가 구비할 예정입니다. 
 매달 투표가 진행되니 여러분들의 적극적인 참여 기다리겠습니다.
-
-        </h4>
+      </h4>
     </div>
 
-  
     <div class="modal modal__hidden js-modal">
-        <div class="modal__overlay"></div>
-        <div class="modal__box">
-            <h1>투표하시겠습니까?</h1>
+      <div class="modal__overlay"></div>
+      <div class="modal__box">
+        <h1>투표하시겠습니까?</h1>
 
-            <button class="js-modalCloseBtn closebtn">X</button>
-            <div class="options">
-                <button class="btn">Yes</button>
-                <button class="btn">No</button>
-              </div>
+        <button class="js-modalCloseBtn closebtn">X</button>
+        <div class="options">
+          <button class="btn">Yes</button>
+          <button class="btn">No</button>
         </div>
+      </div>
     </div>
 
-    <div class="search">  <input type="text" placeholder="검색창"></div>
+    <div class="search"><input type="text" placeholder="검색창" /></div>
     <div class="ranking">
-        
+      <div class="rank_nav">
+        <span class="ranking_num">순위</span
+        ><span class="book_title">책이름</span><span class="author">저자</span
+        ><span class="publisher">출판사</span
+        ><span class="vote_cnt">투표 수</span>
+      </div>
 
-        <div class="rank_nav">
-            <span class="ranking_num">순위</span><span class="book_title">책이름</span><span class="author">저자</span><span class="publisher">출판사</span><span class="vote_cnt">투표 수</span>
-        </div>
+      <div class="rank">
+        <span class="rank_num">1</span><span>JAVA programming</span
+        ><span>황기태·김효수</span><span>생능출판사</span
+        ><span class="cnt_vote">137</span>
+        <button class="js-modalBtn">🥇</button>
+      </div>
 
-        <div class="rank">
-            <span class="rank_num">1</span><span>JAVA programming</span><span>황기태·김효수</span><span>생능출판사</span><span class="cnt_vote">137</span> <button class="js-modalBtn">vote!</button>
-        </div>
+      <div class="rank">
+        <span class="rank_num">2</span><span>미디어의 이해</span
+        ><span>마셜 매클루언</span><span>커뮤니케이션</span
+        ><span class="cnt_vote">131</span
+        ><button class="js-modalBtn">🥈</button>
+      </div>
 
+      <div class="rank">
+        <span class="rank_num">3</span><span>경영이란 무엇인가</span
+        ><span>조안 마그레타</span><span>김영사</span
+        ><span class="cnt_vote">116</span
+        ><button class="js-modalBtn">🥉</button>
+      </div>
 
-        <div class="rank">
-            <span class="rank_num">2</span><span>미디어의 이해</span><span>마셜 매클루언</span><span>커뮤니케이션</span><span class="cnt_vote">131</span><button class="js-modalBtn">vote!</button>
-        </div>
+      <div class="rank">
+        <span class="rank_num">4</span><span>조직행동론</span
+        ><span>스티브 P.로빈스</span><span>한티미디어</span
+        ><span class="cnt_vote">93</span
+        ><button class="js-modalBtn">🏃‍♀</button>
+      </div>
 
+      <div class="rank">
+        <span class="rank_num">5</span><span>열혈 C프로그래밍</span
+        ><span>윤성우</span><span>오렌지미디어</span
+        ><span class="cnt_vote">82</span
+        ><button class="js-modalBtn">🏃‍♀</button>
+      </div>
 
-        <div class="rank">
-            <span class="rank_num">3</span><span>경영이란 무엇인가</span><span>조안 마그레타</span><span>김영사</span><span class="cnt_vote">116</span><button class="js-modalBtn">vote!</button>
-        </div>
+      <div class="rank">
+        <span class="row_num">6</span><span>멋사화이팅</span
+        ><span>bookrest</span><span>성공회대학교</span
+        ><span class="cnt_vote">80</span
+        ><button class="js-modalBtn">🏃</button>
+      </div>
 
+      <div class="rank">
+        <span class="row_num">7</span><span><a href="detail.html">Do it! 점프 투 파이썬</a></span
+        ><span>박응용</span><span>이지스퍼블리싱</span
+        ><span class="cnt_vote">77</span
+        ><button class="js-modalBtn">🏃</button>
+      </div>
 
-        <div class="rank">
-            <span class="rank_num">4</span><span>조직행동론</span><span>스티브 P.로빈스</span><span>한티미디어</span><span class="cnt_vote">93</span><button class="js-modalBtn">vote!</button>
-        </div>
+      <div class="rank">
+        <span class="row_num">8</span><span>디지털 경영</span><span>김대완</span
+        ><span>창명</span><span class="cnt_vote">65</span
+        ><button class="js-modalBtn">🏃</button>
+      </div>
 
+      <div class="rank">
+        <span class="row_num">9</span><span>강의</span><span>신영복</span
+        ><span>돌베개</span><span class="cnt_vote">51</span
+        ><button class="js-modalBtn">🏃</button>
+      </div>
 
-        <div class="rank">
-            <span class="rank_num">5</span><span>열혈 C프로그래밍</span><span>윤성우</span><span>오렌지미디어</span><span class="cnt_vote">82</span><button class="js-modalBtn">vote!</button>
-        </div>
-
-
-
-
-        <div class="rank">
-            <span class="row_num">6</span><span>멋사화이팅</span><span>bookrest</span><span>성공회대학교</span><span class="cnt_vote">80</span><button class="js-modalBtn">vote!</button>
-        </div>
-
-
-        <div class="rank">
-            <span class="row_num">7</span><span>눈떠라 영작문</span><span>정용권</span><span>한국문화사</span><span class="cnt_vote">77</span><button class="js-modalBtn">vote!</button>
-        </div>
-
-
-        <div class="rank">
-            <span class="row_num">8</span><span>디지털 경영</span><span>김대완</span><span>창명</span><span class="cnt_vote">65</span><button class="js-modalBtn">vote!</button>
-        </div>
-
-        <div class="rank">
-            <span class="row_num">9</span><span>강의</span><span>신영복</span><span>돌베개</span><span class="cnt_vote">51</span><button class="js-modalBtn">vote!</button>
-        </div>
-
-        <div class="rank_end">
-            <span class="row_num">10</span><span>어서와 파이썬은 처음이지</span><span>천인국</span><span>인피니티북스</span><span class="cnt_vote">30</span><button class="js-modalBtn">vote!</button>
-        </div>
-
+      <div class="rank_end">
+        <span class="row_num">10</span><span>어서와 파이썬은 처음이지</span
+        ><span>천인국</span><span>인피니티북스</span
+        ><span class="cnt_vote">30</span
+        ><button class="js-modalBtn">🏃</button>
+      </div>
     </div>
 
     <div class="page">
-        <h3>1/10</h3>
+      <h3>1/10</h3>
     </div>
 
-
-    <div class="month_list">
-
-            <span>MONTH</span>
-            
-
+    <!-- <div class="month_list">
+      <span>MONTH</span>
     </div>
 
     <div class="book_list">
-        <div class="book_detail">
-        <img src="img/book1.jpg" /> 
-        <div class="book_column"><span class="title">알고리즘 트레이닝 북</span><span class="cnt">재고 4권</span></div>
-    </div>
-    <div class="book_detail">
-        <img src="img/book2.jpg" /> 
+      <div class="book_detail">
+        <img src="img/book1.jpg" />
         <div class="book_column">
-            <span class="title">최강 레시피</span><span class="cnt">재고 1권</span>
-            </div>
-    </div>
-    <div class="book_detail">
-        <img src="img/book3.jpg" /> 
-        <div class="book_column">
-        <span class="title">독서모임 꾸리는법</span><span class="cnt">재고 2권</span>
+          <span class="title">알고리즘 트레이닝 북</span
+          ><span class="cnt">재고 4권</span>
         </div>
-    </div>
+      </div>
+      <div class="book_detail">
+        <img src="img/book2.jpg" />
+        <div class="book_column">
+          <span class="title">최강 레시피</span
+          ><span class="cnt">재고 1권</span>
+        </div>
+      </div>
+      <div class="book_detail">
+        <img src="img/book3.jpg" />
+        <div class="book_column">
+          <span class="title">독서모임 꾸리는법</span
+          ><span class="cnt">재고 2권</span>
+        </div>
+      </div>
+    </div> -->
 
-
-</div>
-        
-<script src="js/modal.js"></script>
-</body>
+    <script src="js/modal.js"></script>
+  </body>
 </html>

@@ -1,258 +1,259 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&family=Noto+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&family=Noto+Sans:wght@400;700&display=swap");
 
-
-html, body{
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.navbar{
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-    display: flex;
-    flex-direction: row;
-    margin-left: 100px;
-    background-color: rgba(255, 255, 255, 0.8);
-    width : 100%;
-    height: 63px;    
-    align-items: center;
-    margin-top: 10px;
-    
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 63px;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.navbar > h3{
-    all: unset;
-    font-size: 22px;
-    font-weight: 700;
+.navbar > h3 {
+  all: unset;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.logo{
-    display: flex;
-    flex-direction: row;
-    
+.logo {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
 }
 
-.logo > img{
-    all: unset;
-    width: 42px;
-    height: 37px;
-    margin-top: 10%;
-    margin-right: 7px;
-
+.logo > img {
+  all: unset;
+  width: 42px;
+  height: 37px;
+  margin-top: 10%;
+  margin-right: 7px;
 }
 
-.page_detail{
-    width: 600px;
-    margin-right: 340px;
-    margin-top: 50px;
+.page_detail {
+  width: 600px;
+  margin-right: 340px;
+  margin-top: 50px;
 }
 
-.page_detail > h2{
-    all: unset;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 700;
-    font-size: 19px;
-    color: rgb(29, 43, 43);
-    padding-bottom: 11px;
+.page_detail > h2 {
+  all: unset;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: rgb(29, 43, 43);
+  padding-bottom: 11px;
 }
 
-.page_detail > h4{
-    all: unset;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    white-space: pre-wrap;
-    opacity: 0.9;
-    line-height: 1;
+.page_detail > h4 {
+  all: unset;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  white-space: pre-wrap;
+  opacity: 0.9;
+  line-height: 1;
 }
 
-.ranking{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 950px;
-    background-color: #f8f8f8;
+.ranking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 950px;
+
+  padding: 22px;
+
+  position: relative;
+  margin-bottom: 40px;
+  border: 2px solid #f0f2f3;
+  border-radius: 14px;
+  z-index: 1;
+  box-shadow: 0 3px 24px rgb(0 0 0 / 7%);
+  transition: 0.3s;
 }
 
-.search{
-    width:390px;
-    height: 20px;
-    border-radius: 2px;
-    border: 1px solid #dbdbdb;
-    padding: 9px 0 7px 8px;
-    font-size: 12px;
-    color: #8E9092;
-    margin-bottom: 13px;
-    
- 
+.search {
+  width: 390px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid #dbdbdb;
+  padding: 9px 0 7px 8px;
+  font-size: 12px;
+  color: #8e9092;
+  margin-top: 35PX;
+  margin-bottom: 13px;
 }
 
-.search > input{
-    all: unset;
+.search > input {
+  all: unset;
 }
 
-.rank_nav{
-    display: grid;
-    grid-template-columns: 50px 250px 220px 140px 120px;
-    width:850px;
-    margin-top: 30px;
-    text-align: center;
-    opacity: 0.8;
+.rank_nav {
+  display: grid;
+  grid-template-columns: 50px 250px 220px 140px 120px;
+  width: 850px;
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.8;
 }
 
-.rank, .rank_end{
-    display: grid;
-    grid-template-columns: 28px 300px 180px 180px 87px 80px;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 15px;
-
-    width:90%;
+.rank,
+.rank_end {
+  display: grid;
+  grid-template-columns: 28px 300px 180px 180px 87px 80px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  width: 90%;
 }
 
-.ranking_num{
-    padding-left: 7px;
+.ranking_num {
+  padding-left: 7px;
 }
 
-.js-modalBtn{
-    all: unset;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-    color: rgba(102, 46, 46);
-    cursor: pointer;
+.js-modalBtn {
+  all: unset;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  color: rgba(102, 46, 46);
+  cursor: pointer;
 }
 
-.js-modalBtn:hover{
-    transform: scale(1.2);
-    transition: 0.6s ease-in-out;
+.js-modalBtn:hover {
+  transform: scale(1.2);
+  transition: 0.6s ease-in-out;
+}
+
+.rank_num {
+  margin-left: 20px;
+  color: #e40914;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.row_num {
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.cnt_vote {
+  margin-right: 18px;
+  color: #e40914;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.page {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.page > h3 {
+  all: unset;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.rank_end {
+  margin-bottom: 80px;
+}
+
+.month_list {
+  width: 600px;
+  margin-right: 340px;
+  margin-top: 50px;
+
+  margin-bottom: 20px;
+}
+
+.book_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 950px;
+  height: 500px;
+  background-color: #f8f8f8;
+}
+
+.book_detail {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 250px;
+}
+
+.book_detail > img {
+  all: unset;
+  width: 140px;
+  height: 170px;
+  z-index: 0;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.book_column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 12px;
+  font-size: 14px;
+}
+
+.cnt {
+  color: #ad2a2e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.menu {
+  position: absolute;
+  right: 100px;
+}
+
+.menu > a {
+  all: unset;
+  padding: 10px;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 14px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.menu > a:hover {
+  cursor: pointer;
+  color: black;
+  font-weight: 700;
 }
 
 
-
-.rank_num{
-    margin-left: 20px;
-    color: #E40914;
-    font-weight: 700;
-    font-size: 17px;
+a{
+  all: unset;
+  color: black;
 }
-
-
-
-.row_num{
-    margin-left: 20px;
-    font-size: 17px;
-    font-weight: 700;
-    opacity: 0.7;
-}
-
-.cnt_vote{
-    margin-right: 18px;
-    color: #E40914;
-    font-weight: 700;
-    font-size: 17px;
-}
-
-.page{
-    margin-bottom: 50px;
-    margin-top: 20px;
-}
-
-.page > h3{
-    all:unset;
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.rank_end{
-    margin-bottom: 80px;
-}
-
-.month_list{
-    width: 600px;
-    margin-right: 340px;
-    margin-top: 50px;
-
-    margin-bottom: 20px;
-}
-
-
-.book_list{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 950px;
-    height: 500px;
-    background-color: #f8f8f8;
- 
-
-}
-
-.book_detail{
-    display: flex;
-    flex-direction: row;
-    width: 500px;
-    height: 250px;
-}
-
-.book_detail > img{
-    all: unset;
-    width: 140px;
-    height: 170px;
-    z-index: 0;
-    margin-top: 30px;
-    margin-left: 30px;
-    
-}
-
-.book_column{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 12px;
-    font-size: 14px;
-   
-}
-
-.cnt{
-    color: #ad2a2e;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-
-    .menu {
-        position: absolute;
-        right: 100px;
-    }
-    
-    .menu > a {
-        all: unset;
-        padding: 10px;
-        display: inline-block;
-        font-size: 15px;
-        margin-right: 14px;
-        text-align: center;
-        font-family: 'Noto Sans KR', sans-serif;
-        font-weight: 500;
-        cursor: pointer;
-        color: black;
-        transition: 0.3s;
-    }
-    
-    .menu > a:hover {
-        cursor: pointer;
-        color: black;
-        font-weight: 700;
-    }
-    
