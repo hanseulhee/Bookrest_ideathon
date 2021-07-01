@@ -1,72 +1,297 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&family=Noto+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&family=Noto+Sans:wght@400;700&display=swap');
 
-html,
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: "Noto Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar {
-  position: sticky;
-  top: 0px;
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  margin-left: 100px;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
-  height: 63px;
-  align-items: center;
-  margin-top: 10px;
+.navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width : 100%;
+    height: 63px;    
+    align-items: center;
+    margin-top: 10px;
 }
 
-.navbar > h3 {
-  all: unset;
-  font-size: 22px;
-  font-weight: 700;
+.navbar > h3{
+    all: unset;
+    font-size: 22px;
+    font-weight: 700;
 }
 
 .menu {
-  position: absolute;
-  right: 100px;
+    position: absolute;
+    right: 100px;
 }
 
 .menu > a {
-  all: unset;
-  padding: 10px;
-  display: inline-block;
-  font-size: 15px;
-  margin-right: 14px;
-  text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  color: black;
-  transition: 0.3s;
+    all: unset;
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 14px;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
 }
 
 .menu > a:hover {
-  cursor: pointer;
-  color: black;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo > img{
+    all: unset;
+    width: 42px;
+    height: 37px;
+    margin-top: 10%;
+    margin-right: 7px;
+
+}
+
+/* 아래는 하성 추가*/
+
+.search{
+    width: 1000px;
+    height: 100%;
+    border: 2px solid #3a5134;
+    background: #ffffff;
+    padding: 2px;
+}
+
+.search > input{  
+    font-size: 18px;
+    width: 900px;
+    height: 100%;
+    border: none;
+    outline: none;
+    float: left;
+}
+
+.search > button{
+    width: 70px;
+    height: 35px;
+    background: #3a5134;
+    float: right;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.category_navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-basis: auto;
+    padding: 10px;
+}
+
+.category_navbar > a{
+    padding: 10px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.book_list{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 335px 335px 335px;
+    grid-template-rows: auto;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.book_list :hover{
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1), 0 6px 2px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}
+
+.book{
+    display: grid;
+    grid-template-columns: 105px 200px;
+    grid-template-rows: auto;
+    padding: 15px;
+
+    border-radius: 13px;
+    border: #E5E5E5;
+    background-color: whitesmoke;
+}
+
+.book > img{
+    all: unset;
+    width: 105px;
+    height: 148px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1), 0 6px 2px rgba(0, 0, 0, 0.09);
+}
+
+.book_info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: 210px;
+}
+
+.detail_title{
+    all: unset;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.title{
+    padding-top: 5px;
+}
+
+.title, .author, .major{
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.end_button{
+    margin-top: 19px;
+}
+
+button{
+    all: unset;
+    opacity: 0.9;
+    width: 52%;
+    height: 31px;
+  
+    cursor: pointer;
+    background-color: #D1EBDF;
+    font-size: 14px;
+    text-align: center;
+  
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.07);
+    transition: background-color 0.3s;
+  
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+button:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11), 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #97cab3;
+}
+
+
+.ex_card{
+    display: flex;
+    width: 320px;
+    height: 180px;
+    padding: 15px;
+    position: relative;
+    border: 2px solid #f0f2f3;
+    border-radius: 14px;
+    z-index: 1;
+    box-shadow: 0 3px 24px rgb(0 0 0 / 7%);
+    transition: 0.2s;
+   }
+
+   .ex_card :hover{
+    box-shadow: 0px 0px 0px;
+  }
+  
+  .ex_card_column{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px 5px 10px;
+  }
+  
+  .ex_card > img{
+    all: unset;
+    width: 105px;
+    height: 148px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.09);
+  }
+  
+  .ex_card_column > h2{
+    all: unset;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  
+   
+  }
+  
+  .ex_card_column > span{
+    margin-top: 9px;
+    opacity: 0.9;
+  }
+  
+  .first_span{
+    padding-top: px;
+    opacity: 0.9;
+  }
+  
+  
+  .column_title{
+    all: unset;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    opacity: 0.9;
+    margin-right: 10px;
+  }
+  
+  .ex_card_column> b{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 0.8;
+    color: rgb(138, 7, 7);
+    margin-top: 12px;
+    margin-left: 120px;
+    cursor: pointer;
+  }
+
+  .ex_card_column> a{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    opacity: 0.8;
+    color: rgb(138, 7, 7);
+    margin-top: 12px;
+    margin-left: 120px;
+    cursor: pointer;
+  }
+
+  .ex_card_column> a:link{
+    text-decoration: none !important;
+  }
+
+  a{
+      all: unset;
+      color: black;
+      cursor: pointer;
+  }
+
+
+a:hover{
   font-weight: 700;
 }
-
-.logo {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo > img {
-  all: unset;
-  width: 42px;
-  height: 37px;
-  margin-top: 10%;
-  margin-right: 7px;
-}
+  
